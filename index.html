@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div>
+
+        <button class="glow-on-hover" type="button">START QUIZ...!</button> 
+
+        <div class="infobox">
+            <div class="infotitle">
+                <span>Rules of this Quiz</span>
+            </div>
+            
+            <div class="infolist">
+                <div class="info">
+                    1. U'll have only <span><b>15 seconds</b></span> per Each Question.
+                </div>
+                <div class="info">
+                    2. Once you select your answer, it can't be <span><b>undone</b></span>.
+                </div>
+                <div class="info">
+                    3. You can't select any option once time goes off.
+                </div>
+                <div class="info">
+                    4. You can't exit from the Quiz while you're playing.
+                </div>
+                <div class="info">
+                    5. You'll get points on the basis of <span><b>Your</b></span> correct answers.
+                </div>
+                
+                <div class="buttons">
+                    <button class="restart">
+                        Continue
+                    </button>
+                    <button class="quit">
+                        Exit Quiz
+                    </button>
+                </div>
+
+                <div class="quizbox">
+                    <header>
+                        <div class="title">Quiz Application</div>
+                        <div class="timer">
+                            <div class="timeleft">Time Left</div>
+                            <div class="timersec">15</div>
+                        </div>
+                        <div class="timeline"></div>
+                    </header>
+                    <section>
+                        <div class="questxt"></div>
+                        <div class="optlist"></div>
+                    </section>
+                    <footer>
+                        <div class="totques"></div>
+                        <button class="nxtbtn">NEXT</button>
+                    </footer>
+                </div>
+
+                <div class="resultbox">
+                    <div class="icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="comptxt">You've completed the QUIZ...!</div>
+                    <div class="scoretxt"></div>
+                    <div class="buttons">
+                        <button class="restart">Replay Quiz</button>
+                        <button class="quit">Quit Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
