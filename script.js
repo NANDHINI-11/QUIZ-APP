@@ -156,17 +156,17 @@ function showResult () {
     const scoreText = resultbox.querySelector(".scoretxt");
     if(userScore > 10) 
     {
-        let scoreTag = '<span>and ✨ Congrats ✨...!😎🎉🥳, You got <p>' + '&nbsp;' + userScore + '&nbsp;' +'</p> out of <p>' + '&nbsp;' + questions.length +'</p></span>';
+        let scoreTag = '<span>and ✨Congrats✨...!😎🎉, You got <p>' + '&nbsp;' + userScore + '&nbsp;' +'</p> out of <p>' + '&nbsp;' + questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
     else if (userScore > 5)
     {
-        let scoreTag = '<span>and ✨ Nice ✨...!🥳, You got <p>' + '&nbsp;' + userScore + '&nbsp;' +'</p> out of <p>' + '&nbsp;' + questions.length +'</p></span>';
+        let scoreTag = '<span>and ✨Nice✨...!🥳, You got <p>' + '&nbsp;' + userScore + '&nbsp;' +'</p> out of <p>' + '&nbsp;' + questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
     else
     {
-        let scoreTag = '<span>and ✨ Sorry ✨...!😕, You got only <p>' + '&nbsp;' + userScore + '&nbsp;' +'</p> out of <p>' + '&nbsp;' + questions.length +'</p></span>';
+        let scoreTag = '<span>and ✨Sorry✨...!😕, You got only <p>' + '&nbsp;' + userScore + '&nbsp;' +'</p> out of <p>' + '&nbsp;' + questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
 }
